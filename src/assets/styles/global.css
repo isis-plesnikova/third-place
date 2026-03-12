@@ -1,6 +1,22 @@
 html,
 body {
-  background-color: orange;
+  /* TODO: Either change image or attribute to author*/
+  background-image: url("/park.jpg");
+  background-size: cover;
+  background-position: center; /* Centers the most important part of the image */
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  background-color: #47b779;
+  font-family: "arcadeclassic";
+}
+
+body {
+  cursor: url("/coffeecursor.svg"), auto;
+  font-family: "arcadeclassic";
+}
+
+@font-face {
+  font-family: "arcadeclassic";
+  src: url("/ARCADECLASSIC.TTF") format("truetype");
 }
