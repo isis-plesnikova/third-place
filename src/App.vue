@@ -6,7 +6,8 @@
       </div>
       <div class="grid-container">
         <aside class="left-column">
-          <img src="/fakead.gif" width="200" height="243" />
+          <img class="lets-chat" src="/letschat.svg" width="100" height="40" />
+          <img class="paywall" src="/fakead.gif" width="200" height="243" />
           <h2>Fix your face today!</h2>
           <img src="/beautypixel.png" width="200" height="243" />
         </aside>
@@ -17,6 +18,10 @@
         <aside class="right-column">
           <img src="/chumpgpt.gif" width="100" height="100" />
           <img src="/chumpgptad.gif" width="100" height="100" />
+          <p>
+            Have you ever tried working from home, but can't seem to to focus?
+          </p>
+          <h3>Cafes are in!</h3>
         </aside>
       </div>
     </div>
@@ -164,5 +169,17 @@
        background around it */
     margin: 40px auto;
     padding: 18px;
+  }
+
+  .lets-chat {
+    border-bottom: 2px solid black;
+    &:hover {
+      border-bottom: none;
+      padding-bottom: 2px;
+    }
+  }
+
+  .paywall {
+    padding-top: 20px;
   }
 </style>

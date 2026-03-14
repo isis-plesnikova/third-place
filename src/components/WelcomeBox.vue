@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome-box">Welcome to THIRD PLACE!</div>
+  <h2 class="welcome-box">Welcome to THIRD PLACE!</h2>
 </template>
 <style scoped>
   .welcome-box {
