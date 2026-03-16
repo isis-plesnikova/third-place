@@ -6,8 +6,8 @@
 </template>
 <style scoped>
   .container {
-    border: 2px solid black;
-    background-color: white;
+    border: 5px ridge black;
+    background-color: #b9ccf7;
     padding: 10px;
     margin: 20px;
 

@@ -6,6 +6,7 @@
       </div>
       <div class="grid-container">
         <aside class="left-column">
+          <img class="wander" src="/wander.gif" />
           <img
             class="lets-chat poem"
             src="/letschat.svg"
@@ -46,7 +47,7 @@
           </div>
           <img class="poem" src="/shortform.gif" width="200" height="800" />
           <CafeAd />
-          <p>Credits</p>
+          <img src="/click4credits.gif" />
         </aside>
       </div>
     </div>
@@ -221,5 +222,9 @@
 
   .dialogue-wrapper:hover .dialogue2 {
     display: block;
+  }
+
+  .wander {
+    padding-bottom: 20px;
   }
 </style>
