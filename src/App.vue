@@ -6,19 +6,47 @@
       </div>
       <div class="grid-container">
         <aside class="left-column">
-          <img class="lets-chat" src="/letschat.svg" width="100" height="40" />
-          <img class="paywall" src="/fakead.gif" width="200" height="243" />
+          <img
+            class="lets-chat poem"
+            src="/letschat.svg"
+            width="100"
+            height="40"
+          />
+          <!-- <img src="/lovethirdplace.gif" /> -->
+          <img
+            class="paywall poem"
+            src="/fakead.gif"
+            width="200"
+            height="243"
+          />
           <BeautyAd />
         </aside>
         <main class="main-content">
           <WelcomeBox />
+          <div class="dialogue-wrapper" role="img" aria-label="dialogue images">
+            <img
+              class="dialogue"
+              src="/dialogue.png"
+              width="400"
+              height="1600"
+            />
+            <img
+              class="dialogue2"
+              src="/dialogue2.png"
+              width="400"
+              height="1600"
+            />
+          </div>
           <YoutubeVideo />
         </main>
         <aside class="right-column">
-          <img src="/chumpgpt.gif" width="100" height="100" />
-          <img src="/chumpgptad.gif" width="100" height="100" />
-          <img src="/shortform.gif" width="200" height="800" />
+          <div class="poem">
+            <img src="/chumpgpt-pingpong.gif" width="100" height="100" />
+            <img src="/chumpgptad.gif" width="100" height="100" />
+          </div>
+          <img class="poem" src="/shortform.gif" width="200" height="800" />
           <CafeAd />
+          <p>Credits</p>
         </aside>
       </div>
     </div>
@@ -176,5 +204,22 @@
 
   .paywall {
     padding-top: 20px;
+  }
+
+  /* Dialogue hover swap: show dialogue.png by default, swap to dialogue2.png on hover */
+  .dialogue-wrapper {
+    display: inline-block;
+  }
+
+  .dialogue-wrapper .dialogue2 {
+    display: none;
+  }
+
+  .dialogue-wrapper:hover .dialogue {
+    display: none;
+  }
+
+  .dialogue-wrapper:hover .dialogue2 {
+    display: block;
   }
 </style>

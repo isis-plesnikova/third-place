@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="poem container">
     <h2>Yuck! Fix your face today!</h2>
     <img src="/beautypixel.png" width="200" height="243" />
   </div>

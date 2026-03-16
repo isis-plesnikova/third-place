@@ -9,7 +9,7 @@
   .welcome-box {
     border: 4px groove green;
     width: 450px;
-    height: 300px;
+    height: auto;
     padding: 20px;
     margin: 20px;
   }

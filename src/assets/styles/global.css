@@ -16,7 +16,7 @@ body {
   font-family: "myfont";
 
   /*TODO: Change "img" to be a class like "clickable"*/
-  img:hover {
+  .poem:hover {
     cursor: pointer;
   }
 }
