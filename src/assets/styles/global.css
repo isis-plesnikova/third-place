@@ -14,6 +14,11 @@ body {
 body {
   cursor: url("/coffeecursor.svg"), auto;
   font-family: "myfont";
+
+  /*TODO: Change "img" to be a class like "clickable"*/
+  img:hover {
+    cursor: pointer;
+  }
 }
 
 @font-face {

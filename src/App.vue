@@ -8,8 +8,7 @@
         <aside class="left-column">
           <img class="lets-chat" src="/letschat.svg" width="100" height="40" />
           <img class="paywall" src="/fakead.gif" width="200" height="243" />
-          <h2>Fix your face today!</h2>
-          <img src="/beautypixel.png" width="200" height="243" />
+          <BeautyAd />
         </aside>
         <main class="main-content">
           <WelcomeBox />
@@ -18,10 +17,8 @@
         <aside class="right-column">
           <img src="/chumpgpt.gif" width="100" height="100" />
           <img src="/chumpgptad.gif" width="100" height="100" />
-          <p>
-            Have you ever tried working from home, but can't seem to to focus?
-          </p>
-          <h3>Cafes are in!</h3>
+          <img src="/shortform.gif" width="200" height="800" />
+          <CafeAd />
         </aside>
       </div>
     </div>
@@ -60,6 +57,8 @@
   import RetroPopup from "./components/RetroPopup.vue";
   import YoutubeVideo from "./components/YoutubeVideo.vue";
   import WelcomeBox from "./components/WelcomeBox.vue";
+  import BeautyAd from "./components/BeautyAd.vue";
+  import CafeAd from "./components/CafeAd.vue";
 
   interface AppState {
     showOpeningPopup: boolean;
@@ -173,10 +172,6 @@
 
   .lets-chat {
     border-bottom: 2px solid black;
-    &:hover {
-      border-bottom: none;
-      padding-bottom: 2px;
-    }
   }
 
   .paywall {
