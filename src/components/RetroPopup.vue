@@ -2,7 +2,9 @@
   <div v-if="props.visible" class="retro-backdrop" @click.stop></div>
   <div v-if="props.visible" class="retro-popup" role="dialog" aria-modal="true">
     <h2>{{ props.header }}</h2>
-    <slot></slot>
+    <div class="popup-body">
+      <slot></slot>
+    </div>
     <button class="close-button" @click="onPopupClose">Close</button>
   </div>
 </template>
@@ -70,6 +72,11 @@
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
+  }
+
+  /* Left-justify text inside the popup body */
+  .retro-popup .popup-body {
+    text-align: left;
   }
 
   .retro-popup .close-button {

@@ -7,18 +7,8 @@
       <div class="grid-container">
         <aside class="left-column">
           <img class="wander" src="/wander.gif" />
-          <img
-            class="lets-chat poem"
-            src="/letschat.svg"
-            width="100"
-            height="40"
-          />
-          <img
-            class="paywall poem"
-            src="/fakead.gif"
-            width="200"
-            height="243"
-          />
+          <LetsChat />
+          <PaywallAd />
           <BeautyAd />
         </aside>
         <main class="main-content">
@@ -111,6 +101,8 @@
   import CafeAd from "./components/CafeAd.vue";
   import ChumpGpt from "./components/ChumpGpt.vue";
   import ShortForm from "./components/ShortForm.vue";
+  import PaywallAd from "./components/PaywallAd.vue";
+  import LetsChat from "./components/LetsChat.vue";
 
   interface AppState {
     showOpeningPopup: boolean;
@@ -199,20 +191,6 @@
     height: 50px;
   }
 
-  /* img {
-    border: 1px solid #47b779;
-  } */
-
-  /* ensure images don't overflow their column and stay centered */
-  .left-column img,
-  .right-column img,
-  .main-content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
   .body-section {
     width: 1200px;
     max-width: 100%;
@@ -220,14 +198,6 @@
        background around it */
     margin: 40px auto;
     padding: 18px;
-  }
-
-  .lets-chat {
-    border-bottom: 2px solid black;
-  }
-
-  .paywall {
-    padding-top: 20px;
   }
 
   /* Dialogue hover swap: show dialogue.png by default, swap to dialogue2.png on hover */
