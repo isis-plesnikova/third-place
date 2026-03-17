@@ -54,8 +54,13 @@
     box-shadow: 8px 8px 0px #000; /* 3D shadow */
     padding: 20px;
     padding-bottom: 64px;
+    /* cap height and use flex so body can scroll when content is tall */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     text-align: center;
     width: 500px;
+    max-height: 80vh;
     z-index: 1000;
   }
 
@@ -77,6 +82,10 @@
   /* Left-justify text inside the popup body */
   .retro-popup .popup-body {
     text-align: left;
+    overflow: auto;
+    /* allow flex child to shrink so overflow works inside flex container */
+    flex: 1 1 auto;
+    min-height: 0;
   }
 
   .retro-popup .close-button {

@@ -56,16 +56,18 @@
       Third: ???`"
     @update:visible="state.showOpeningPopup = false"
   >
-    <p>First: Home, bed</p>
-    <p>sleep. Heart, steep</p>
-    <p>tea dream cook clean.</p>
-    <br />
-    <p>Second: Worker</p>
-    <p>bee, think. Be work,</p>
-    <p>coffee drink, buzz,</p>
-    <p>meet.</p>
-    <br />
-    <p>Third: ???</p>
+    <div style="text-align: center">
+      <p>First: Home, bed</p>
+      <p>sleep. Heart, steep</p>
+      <p>tea dream cook clean.</p>
+      <br />
+      <p>Second: Worker</p>
+      <p>bee, think. Be work,</p>
+      <p>coffee drink, buzz,</p>
+      <p>meet.</p>
+      <br />
+      <p>Third: ???</p>
+    </div>
   </RetroPopup>
   <footer>
     <p>See u next time!</p>

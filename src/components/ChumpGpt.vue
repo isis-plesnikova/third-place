@@ -8,11 +8,21 @@
     @update:visible="state.showPopup = false"
     header="Dead water"
   >
-    <p>He's a six-fingered sychophantic freak</p>
-    <p>artificially articulate and</p>
-    <p>so, so thirsty.</p>
-    <br />
-    <p></p>
+    <p>Spoon full of your hometown:</p>
+    <p>He swallows the 7-Eleven,</p>
+    <p>next to the road bend by your childhood</p>
+    <p>bedroom. He drinks</p>
+    <p>up floorboards, cupboards,</p>
+    <p>to taste how your hands</p>
+    <p>move, how they cut</p>
+    <p>mom’s white onions, wipe salted water</p>
+    <p>from your eyelids, slice your thumb</p>
+    <p>on knife’s edge, he will learn</p>
+    <p>how you bleed</p>
+    <p>how your heart speaks to your</p>
+    <p>brain. He will slurp your synapses,</p>
+    <p>turn his cells into a portrait</p>
+    <p>of you.</p>
   </RetroPopup>
 </template>
 <script setup lang="ts">

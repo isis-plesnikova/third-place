@@ -22,7 +22,7 @@
     <p>weirdly sexual to me but I shouldn’t say that</p>
     <p>I’m in the middle of reading this company</p>
     <p>report but Excel is blowing up and my oat milk</p>
-    <p>latte is too sweet and it was $7</p>
+    <p>latte is too sweet and it was $7,</p>
     <p>I didn’t tip.</p>
   </RetroPopup>
 </template>
