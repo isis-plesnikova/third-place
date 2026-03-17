@@ -13,7 +13,6 @@
             width="100"
             height="40"
           />
-          <!-- <img src="/lovethirdplace.gif" /> -->
           <img
             class="paywall poem"
             src="/fakead.gif"
@@ -41,11 +40,8 @@
           <YoutubeVideo />
         </main>
         <aside class="right-column">
-          <div class="poem">
-            <img src="/chumpgpt-pingpong.gif" width="100" height="100" />
-            <img src="/chumpgptad.gif" width="100" height="100" />
-          </div>
-          <img class="poem" src="/shortform.gif" width="200" height="800" />
+          <ChumpGpt />
+          <ShortForm />
           <CafeAd />
           <div class="poem credits">
             <img src="/click4credits.gif" />
@@ -113,6 +109,8 @@
   import WelcomeBox from "./components/WelcomeBox.vue";
   import BeautyAd from "./components/BeautyAd.vue";
   import CafeAd from "./components/CafeAd.vue";
+  import ChumpGpt from "./components/ChumpGpt.vue";
+  import ShortForm from "./components/ShortForm.vue";
 
   interface AppState {
     showOpeningPopup: boolean;

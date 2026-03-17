@@ -3,14 +3,13 @@
   <div v-if="props.visible" class="retro-popup" role="dialog" aria-modal="true">
     <h2>{{ props.header }}</h2>
     <slot></slot>
-    <button class="close-button" @click="onPopupClose">Close &gt;</button>
+    <button class="close-button" @click="onPopupClose">Close</button>
   </div>
 </template>
 <script setup lang="ts">
   interface RetroPopupProps {
     visible: boolean;
     header: string;
-    text: string;
   }
 
   const props = defineProps<RetroPopupProps>();

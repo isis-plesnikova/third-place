@@ -13,9 +13,11 @@
     margin: 20px;
     font-size: 20px;
   }
+
   .poem .ad-tag {
     margin: 8px 0 0 0;
   }
+
   .poem .ad-image {
     display: block;
     margin-top: 8px;
