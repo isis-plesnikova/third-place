@@ -47,15 +47,40 @@
           </div>
           <img class="poem" src="/shortform.gif" width="200" height="800" />
           <CafeAd />
-          <img src="/click4credits.gif" />
+          <div class="poem credits">
+            <img src="/click4credits.gif" />
+          </div>
         </aside>
       </div>
     </div>
   </div>
   <RetroPopup
     v-model:visible="state.showOpeningPopup"
+    header="FIRST / SECOND / THIRD"
+    :text="`
+      First: Home, bed, sleep. 
+      Heart, steep tea dream 
+      cook clean.
+      
+      Second: Worker
+      bee, think. Be work, 
+      coffee drink, buzz, 
+      meet 
+
+      Third: ???`"
     @update:visible="state.showOpeningPopup = false"
-  />
+  >
+    <p>First: Home, bed</p>
+    <p>sleep. Heart, steep</p>
+    <p>tea dream cook clean.</p>
+    <br />
+    <p>Second: Worker</p>
+    <p>bee, think. Be work,</p>
+    <p>coffee drink, buzz,</p>
+    <p>meet.</p>
+    <br />
+    <p>Third: ???</p>
+  </RetroPopup>
   <footer>
     <p>See u next time!</p>
     <!-- By
@@ -94,7 +119,7 @@
   }
 
   const state = reactive<AppState>({
-    showOpeningPopup: false, // TODO: Change to true
+    showOpeningPopup: true, // TODO: Change to true
   });
 </script>
 
@@ -226,5 +251,9 @@
 
   .wander {
     padding-bottom: 20px;
+  }
+
+  .credits {
+    margin-top: 30px;
   }
 </style>

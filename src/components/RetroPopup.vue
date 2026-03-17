@@ -1,25 +1,46 @@
 <template>
-  <div v-if="props.visible" class="retro-popup">
-    <h2>THIRD PLACE</h2>
-    <button @click="onPopupClose">x</button>
-    <p>
-      First: Home, bed, sleep. Heart, steep tea dream cook clean Second: Worker
-      bee, think. Be work, coffee drink, buzz, meet Third: ???
-    </p>
+  <div v-if="props.visible" class="retro-backdrop" @click.stop></div>
+  <div v-if="props.visible" class="retro-popup" role="dialog" aria-modal="true">
+    <h2>{{ props.header }}</h2>
+    <slot></slot>
+    <button class="close-button" @click="onPopupClose">Close &gt;</button>
   </div>
 </template>
 <script setup lang="ts">
   interface RetroPopupProps {
     visible: boolean;
+    header: string;
+    text: string;
   }
 
   const props = defineProps<RetroPopupProps>();
+
+  const emit = defineEmits(["update:visible"]);
 
   const onPopupClose = () => {
     emit("update:visible", false);
   };
 
-  const emit = defineEmits(["update:visible"]);
+  import { watch, onBeforeUnmount } from "vue";
+
+  const restoreBody = () => {
+    document.body.style.overflow = "";
+  };
+
+  watch(
+    () => props.visible,
+    (visible) => {
+      if (visible) {
+        document.body.style.overflow = "hidden";
+      } else {
+        restoreBody();
+      }
+    },
+  );
+
+  onBeforeUnmount(() => {
+    restoreBody();
+  });
 </script>
 <style scoped>
   .retro-popup {
@@ -31,10 +52,9 @@
     border: 4px solid #000;
     box-shadow: 8px 8px 0px #000; /* 3D shadow */
     padding: 20px;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
+    padding-bottom: 64px;
     text-align: center;
-    width: 300px;
+    width: 500px;
     z-index: 1000;
   }
 
@@ -47,8 +67,28 @@
   .retro-popup button {
     background: #fff;
     border: 2px solid #000;
-    padding: 5px 15px;
+    padding: 6px 12px;
     cursor: pointer;
     font-family: inherit;
+    font-size: 16px;
+  }
+
+  .retro-popup .close-button {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .retro-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 900;
+    /* capture pointer events so underlying UI is not interactable */
+    pointer-events: auto;
   }
 </style>
