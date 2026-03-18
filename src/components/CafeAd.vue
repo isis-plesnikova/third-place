@@ -7,7 +7,7 @@
   <RetroPopup
     v-model:visible="state.showPopup"
     @update:visible="state.showPopup = false"
-    header="There's no place for me anymore"
+    header="No place for me anymore"
   >
     <p>Coffee shop hot spot</p>
     <p>lights are on. I solved the Wordle</p>

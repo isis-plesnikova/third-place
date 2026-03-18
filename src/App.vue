@@ -33,9 +33,7 @@
           <ChumpGpt />
           <ShortForm />
           <CafeAd />
-          <div class="poem credits">
-            <img src="/click4credits.gif" />
-          </div>
+          <CreditSection />
         </aside>
       </div>
     </div>
@@ -71,26 +69,6 @@
   </RetroPopup>
   <footer>
     <p>See u next time!</p>
-    <!-- By
-    <a
-      rel="nofollow"
-      class="external text"
-      href="https://www.flickr.com/people/185008797@N05"
-      >Real Estate Japan</a
-    >
-    from Tokyo, Japan -
-    <a
-      rel="nofollow"
-      class="external text"
-      href="https://www.flickr.com/photos/185008797@N05/49952811147/"
-      >Yoyogi Park 5/30 weekend after state of emergency lifted in Tokyo</a
-    >,
-    <a
-      href="https://creativecommons.org/licenses/by/2.0"
-      title="Creative Commons Attribution 2.0"
-      >CC BY 2.0</a
-    >,
-    <a href="https://commons.wikimedia.org/w/index.php?curid=90940491">Link</a> -->
   </footer>
 </template>
 
@@ -105,13 +83,14 @@
   import ShortForm from "./components/ShortForm.vue";
   import PaywallAd from "./components/PaywallAd.vue";
   import LetsChat from "./components/LetsChat.vue";
+  import CreditSection from "./components/CreditSection.vue";
 
   interface AppState {
     showOpeningPopup: boolean;
   }
 
   const state = reactive<AppState>({
-    showOpeningPopup: true, // TODO: Change to true
+    showOpeningPopup: true,
   });
 </script>
 
@@ -221,9 +200,5 @@
 
   .wander {
     padding-bottom: 20px;
-  }
-
-  .credits {
-    margin-top: 30px;
   }
 </style>

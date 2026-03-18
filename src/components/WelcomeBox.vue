@@ -7,7 +7,7 @@
 </template>
 <style scoped>
   .welcome-box {
-    border: 4px groove green;
+    border: 12px inset green;
     width: 450px;
     height: auto;
     padding: 20px;
