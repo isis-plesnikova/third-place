@@ -19,8 +19,8 @@
     <p>like Miranda Priestly.</p>
     <p>Now you’re in San Francisco and I’m in</p>
     <p>this place called <i>The Bean</i> which feels</p>
-    <p>weirdly sexual to me but I shouldn’t say that</p>
-    <p>I’m in the middle of reading this company</p>
+    <p>weirdly sexual to me but I shouldn’t say that I’m in</p>
+    <p>the middle of reading this company</p>
     <p>report but Excel is blowing up and my oat milk</p>
     <p>latte is too sweet and it was $7,</p>
     <p>I didn’t tip.</p>

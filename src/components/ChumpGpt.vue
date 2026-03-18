@@ -1,5 +1,5 @@
 <template>
-  <div class="poem" @click="state.showPopup = true">
+  <div class="poem chumpgpt" @click="state.showPopup = true">
     <img src="/chumpgpt-pingpong.gif" width="100" height="100" />
     <img src="/chumpgptad.gif" width="100" height="100" />
   </div>
@@ -35,3 +35,8 @@
 
   const state = reactive<IChumpGptState>({ showPopup: false });
 </script>
+<style scoped>
+  .chumpgpt {
+    margin-bottom: 20px;
+  }
+</style>
