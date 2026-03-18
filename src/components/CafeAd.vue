@@ -7,11 +7,11 @@
   <RetroPopup
     v-model:visible="state.showPopup"
     @update:visible="state.showPopup = false"
-    header="No place for me anymore"
+    header="No place"
   >
     <p>Coffee shop hot spot</p>
     <p>lights are on. I solved the Wordle</p>
-    <p>in two guesses the answer was</p>
+    <p>in two guesses the word was</p>
     <p><b>THEFT.</b> We went to cafes</p>
     <p>when we were fifteen</p>
     <p>or so to chat about the world</p>

@@ -11,7 +11,23 @@
     @update:visible="state.showPopup = false"
     :header="state.showReply ? `Re: ${state.subject}` : 'Send me an email!'"
   >
-    <div v-if="state.showReply">Hello</div>
+    <div v-if="state.showReply">
+      <p>You’re alive! I can see</p>
+      <p>rot pressed into your screen,</p>
+      <p>this world is slow breathing</p>
+      <p>on its death bed of greed.</p>
+      <br />
+      <p>Your palms pressed to its</p>
+      <p>chest, heart washed down</p>
+      <p>your sleeve, comb through</p>
+      <p>the mold, reignite the need.</p>
+      <br />
+      <p>Hold this dying home & leave</p>
+      <p>daisies by the door. Lead</p>
+      <p>its spirit to the riverbed, lay</p>
+      <p>rest some place</p>
+      <p>free.</p>
+    </div>
     <div v-else>
       <p>Hey stranger, nice to meet you!</p>
       <p>Shoot me a message and I'll get back to you as soon as I'm online.</p>
