@@ -24,9 +24,8 @@
       <br />
       <p>Hold this dying home & leave</p>
       <p>daisies by the door. Lead</p>
-      <p>its spirit to the riverbed, lay</p>
-      <p>rest some place</p>
-      <p>free.</p>
+      <p>its spirit to the riverbed,</p>
+      <p>third place is no more.</p>
     </div>
     <div v-else>
       <p>Hey stranger, nice to meet you!</p>

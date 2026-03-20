@@ -1,7 +1,7 @@
 <template>
   <div class="poem container" @click="state.showPopup = true">
     <p>Have you ever tried working from home, but can't seem to to focus?</p>
-    <p class="ad-tag"><i>Cafes are in!</i></p>
+    <p class="ad-tag"><i>Cafés are in!</i></p>
     <img class="ad-image" src="/coffeecompress.png" width="205" height="200" />
   </div>
   <RetroPopup
@@ -12,7 +12,7 @@
     <p>Coffee shop hot spot</p>
     <p>lights are on. I solved the Wordle</p>
     <p>in two guesses the word was</p>
-    <p><b>THEFT.</b> We went to cafes</p>
+    <p><b>THEFT.</b> We went to cafés</p>
     <p>when we were fifteen</p>
     <p>or so to chat about the world</p>
     <p>and how we’d work some hot shot jobs</p>
