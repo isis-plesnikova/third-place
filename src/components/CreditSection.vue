@@ -1,6 +1,6 @@
 <template>
   <div class="poem credits" @click="state.showPopup = true">
-    <img src="/click4credits.gif" />
+    <img src="/click4credits.gif" alt="Credits icon (click to open)" />
   </div>
   <RetroPopup
     v-model:visible="state.showPopup"

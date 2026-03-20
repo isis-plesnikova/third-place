@@ -4,6 +4,7 @@
     src="/shortform.gif"
     width="200"
     height="800"
+    alt="Short-form fake advertisement (click to open)"
     @click="state.showPopup = true"
   />
   <RetroPopup

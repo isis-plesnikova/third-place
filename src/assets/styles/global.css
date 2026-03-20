@@ -1,6 +1,5 @@
 html,
 body {
-  /* TODO: Either change image or attribute to author*/
   background-image: url("/park.jpg");
   background-size: cover;
   background-position: center; /* Centers the most important part of the image */
@@ -15,7 +14,6 @@ body {
   cursor: url("/coffeecursor.svg"), auto;
   font-family: "myfont";
 
-  /*TODO: Change "img" to be a class like "clickable"*/
   .poem:hover {
     cursor: pointer;
   }

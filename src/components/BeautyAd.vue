@@ -1,7 +1,12 @@
 <template>
   <div class="poem container" @click="state.showPopup = true">
     <h2>Yuck! Fix your face today!</h2>
-    <img src="/beautypixel.png" width="200" height="243" />
+    <img
+      src="/beautypixel.png"
+      width="200"
+      height="243"
+      alt="Beauty product ad image (click to open)"
+    />
   </div>
   <RetroPopup
     v-model:visible="state.showPopup"

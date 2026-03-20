@@ -6,7 +6,7 @@
       </div>
       <div class="grid-container">
         <aside class="left-column">
-          <img class="wander" src="/wander.gif" />
+          <img class="wander" src="/wander.gif" alt="Wander illustration" />
           <LetsChat />
           <PaywallAd />
           <BeautyAd />
@@ -19,12 +19,16 @@
               src="/dialogue.png"
               width="400"
               height="1600"
+              alt=""
+              aria-hidden="true"
             />
             <img
               class="dialogue2"
               src="/dialogue2.png"
               width="400"
               height="1600"
+              alt=""
+              aria-hidden="true"
             />
           </div>
           <YoutubeVideo />

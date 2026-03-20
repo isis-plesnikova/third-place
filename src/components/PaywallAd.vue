@@ -4,6 +4,7 @@
     src="/fakead.gif"
     width="200"
     height="243"
+    alt="Paywall fake advertisement (click to open)"
     @click="state.showPopup = true"
   />
   <RetroPopup

@@ -1,7 +1,17 @@
 <template>
   <div class="poem chumpgpt" @click="state.showPopup = true">
-    <img src="/chumpgpt-pingpong.gif" width="100" height="100" />
-    <img src="/chumpgptad.gif" width="100" height="100" />
+    <img
+      src="/chumpgpt-pingpong.gif"
+      width="100"
+      height="100"
+      alt="ChumpGPT ping-pong animation"
+    />
+    <img
+      src="/chumpgptad.gif"
+      width="100"
+      height="100"
+      alt="ChumpGPT ad banner"
+    />
   </div>
   <RetroPopup
     v-model:visible="state.showPopup"

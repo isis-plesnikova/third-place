@@ -4,6 +4,7 @@
     src="/letschat.svg"
     width="100"
     height="40"
+    alt="Open contact form"
     @click="state.showPopup = true"
   />
   <RetroPopup
@@ -19,7 +20,7 @@
       <br />
       <p>Your palms pressed to its</p>
       <p>chest, heart washed down</p>
-      <p>your sleeve, comb through</p>
+      <p>your sleeves, comb through</p>
       <p>the mold, reignite the need.</p>
       <br />
       <p>Hold this dying home & leave</p>
@@ -77,9 +78,6 @@
     subject: string;
     message: string;
   }
-
-  // TODO: Add a subject bar and make the response "Re: Subject"
-  // and also add a fake "sending" gif with 3 second timeout
 
   const state = reactive<IPaywallAdState>({
     showPopup: false,
