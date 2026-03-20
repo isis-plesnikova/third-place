@@ -45,17 +45,6 @@
   <RetroPopup
     v-model:visible="state.showOpeningPopup"
     header="FIRST / SECOND / THIRD"
-    :text="`
-      First: Home, bed, sleep. 
-      Heart, steep tea dream 
-      cook clean.
-      
-      Second: Worker
-      bee, think. Be work, 
-      coffee drink, buzz, 
-      meet 
-
-      Third: ???`"
     @update:visible="state.showOpeningPopup = false"
   >
     <div style="text-align: center">
@@ -69,6 +58,7 @@
       <p>meet.</p>
       <br />
       <p>Third: ???</p>
+      <i>NOTE: Please view site on desktop.</i>
     </div>
   </RetroPopup>
   <footer>

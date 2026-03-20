@@ -93,7 +93,7 @@
     right: 12px;
     bottom: 12px;
     padding: 6px 10px;
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .retro-backdrop {
