@@ -1,6 +1,6 @@
 <template>
   <div class="poem container" @click="state.showPopup = true">
-    <p>Have you ever tried working from home, but can't seem to to focus?</p>
+    <p>Have you ever tried working from home, but can't seem to focus?</p>
     <p class="ad-tag"><i>Cafés are in!</i></p>
     <img
       class="ad-image"
