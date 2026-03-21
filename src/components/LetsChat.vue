@@ -14,7 +14,7 @@
   >
     <div v-if="state.showReply">
       <p>You’re alive! I can see</p>
-      <p>rot pressed into your screen,</p>
+      <p>rot sunk into your screen,</p>
       <p>this world is slow breathing</p>
       <p>on its death bed of greed.</p>
       <br />
